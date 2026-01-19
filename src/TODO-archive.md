@@ -24,3 +24,16 @@
 - [ ] Center hero section text
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-01-19T22:58:21.947Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-01-19T22:58:15.698Z -->
+
+# Current Todo List State
+
+- [ ] Update hero image
+- [ ] Change hero headline text
+- [ ] Update hero subheadline text
+
+──────────────────────────────────────────────────

@@ -11,7 +11,7 @@
 
   <main class="flex flex-col items-center w-full">
     <!-- Hero Section -->
-    <section class="flex flex-col items-center text-center pt-16 pb-12 px-4 max-w-5xl mx-auto">
+    <section class="flex flex-col items-center justify-center text-center h-screen px-4 max-w-5xl mx-auto">
       <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-600 mb-6">Yearly Clarity</h2>
       
       <h1 class="text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] mb-10">
