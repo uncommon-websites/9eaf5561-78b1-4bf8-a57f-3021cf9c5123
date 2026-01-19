@@ -1,127 +1,179 @@
 <script lang="ts">
   import Header from '$lib/components/Header.svelte';
   import Button from '$lib/components/Button.svelte';
-  import Apple from '$lib/components/icons/Apple.svelte';
   import PlannerIcon from '$lib/components/icons/PlannerIcon.svelte';
   import LightningIcon from '$lib/components/icons/LightningIcon.svelte';
   import MindIcon from '$lib/components/icons/MindIcon.svelte';
-  import Laurel from '$lib/components/icons/Laurel.svelte';
-  import PhoneUI from '$lib/components/PhoneUI.svelte';
 </script>
 
-<div class="min-h-screen bg-white text-black font-sans selection:bg-gray-200">
+<div class="min-h-screen bg-white text-black font-sans selection:bg-primary-100">
   <Header />
 
   <main class="flex flex-col items-center w-full">
     <!-- Hero Section -->
-    <section class="flex flex-col items-center text-center pt-10 pb-12 px-4 max-w-4xl mx-auto">
-      <h2 class="text-sm font-semibold mb-6">Joi Planner</h2>
+    <section class="flex flex-col items-center text-center pt-16 pb-12 px-4 max-w-5xl mx-auto">
+      <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-600 mb-6">Yearly Clarity</h2>
       
-      <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-10">
-        <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
-          <span>The daily</span>
-          <span class="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-gray-100 rounded-2xl align-middle mx-1">
-            <PlannerIcon className="w-6 h-6 md:w-8 md:h-8" />
+      <h1 class="text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] mb-10">
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+          <span>Yearly</span>
+          <span class="inline-flex items-center justify-center w-12 h-12 md:w-20 md:h-20 bg-gray-950 rounded-2xl align-middle mx-1">
+            <PlannerIcon className="w-6 h-6 md:w-10 md:h-10 text-primary-400" />
           </span>
-          <span>planner</span>
+          <span>clarity</span>
         </div>
-        <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
-          <span>to keep</span>
-          <span class="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-gray-100 rounded-2xl align-middle mx-1">
-            <LightningIcon className="w-6 h-6 md:w-8 md:h-8" />
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+          <span>in a single</span>
+          <span class="inline-flex items-center justify-center w-12 h-12 md:w-20 md:h-20 bg-primary-500 rounded-full align-middle mx-1">
+            <LightningIcon className="w-6 h-6 md:w-10 md:h-10 text-white" />
           </span>
-          <span>distracted</span>
-        </div>
-        <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
-          <span class="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-gray-100 rounded-2xl align-middle mx-1">
-            <MindIcon className="w-6 h-6 md:w-8 md:h-8" />
-          </span>
-          <span>minds on track</span>
+          <span>glance</span>
         </div>
       </h1>
 
-      <div class="mb-12">
-        <Button>
-          <Apple className="w-5 h-5" />
-          <span class="text-base">Download for iOS</span>
+      <p class="text-xl md:text-2xl text-gray-500 max-w-2xl mb-12 font-medium leading-relaxed">
+        Plan your year without drowning in day-to-day noise. See your entire life on one AI-assisted grid.
+      </p>
+
+      <div class="mb-20">
+        <Button className="px-8 py-4 text-lg">
+          <span class="text-base">Start planning — no signup required</span>
         </Button>
       </div>
 
-      <!-- Awards/Featured -->
-      <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400 text-[10px] md:text-xs font-medium uppercase tracking-widest">
-        <div class="flex items-center gap-2">
-          <Laurel className="w-6 h-12 md:w-8 md:h-16 scale-x-[-1]" />
-          <div class="flex flex-col items-center leading-tight">
-            <span class="text-[8px] md:text-[10px] text-gray-300 mb-0.5">Featured by Apple</span>
-            <span class="font-bold text-gray-300">App of the Day</span>
-          </div>
-          <Laurel className="w-6 h-12 md:w-8 md:h-16" />
+      <!-- Hero Image -->
+      <div class="w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-24">
+        <img 
+          src="/generated/image-a-minimalist-high-end-desk-setup-with-a--1768862714564-0.webp" 
+          alt="YearGrid Desktop Interface" 
+          class="w-full h-auto object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-full bg-gray-950 text-white py-32 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+        <div class="space-y-8">
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight">The heatmap-style year grid</h2>
+          <p class="text-xl text-gray-400 leading-relaxed">
+            Traditional calendars trap you in busywork. Ours sets you free. Every day is contextual, categorized, and color-coded—from now until next December.
+          </p>
+          <ul class="space-y-4 text-lg">
+            <li class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary-500"></div>
+              <span>Organize by work, health, family, and travel</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary-500"></div>
+              <span>Collapse complexity with sub-calendars</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-primary-500"></div>
+              <span>Visual filters for instant clarity</span>
+            </li>
+          </ul>
         </div>
-        <div class="flex items-center gap-2">
-          <Laurel className="w-6 h-12 md:w-8 md:h-16 scale-x-[-1]" />
-          <div class="flex flex-col items-center leading-tight">
-            <span class="text-[8px] md:text-[10px] text-gray-300 mb-0.5">Featured by Apple</span>
-            <span class="font-bold text-gray-300">Editors Choice</span>
-          </div>
-          <Laurel className="w-6 h-12 md:w-8 md:h-16" />
+        <div class="relative">
+          <div class="absolute -inset-4 bg-primary-500/20 blur-3xl rounded-full"></div>
+          <img 
+            src="/generated/image-close-up-of-a-hand-holding-a-smartphone--1768862718697-1.webp" 
+            alt="Mobile App View" 
+            class="relative rounded-2xl shadow-2xl border border-white/10"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Phone Showcase -->
-    <section class="w-full max-w-[1000px] px-4 mb-24 relative flex justify-center">
-      <!-- Background glow/shadow simulation -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gray-100/50 rounded-full blur-3xl -z-10"></div>
-      
-      <!-- Phone Container -->
-      <!-- Since we don't have the hand image, we'll present the phone UI in a nice frame -->
-      <div class="relative w-[300px] md:w-[340px] h-[680px] md:h-[720px] transition-transform hover:scale-[1.02] duration-500">
-        <PhoneUI />
+    <!-- AI Capture Section -->
+    <section class="w-full py-32 px-6 bg-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-24 items-center">
+        <div class="flex-1 space-y-8">
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight">AI-assisted capture</h2>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Stop manual entry. Upload screenshots of emails, flyers, or texts. Our AI extracts titles, dates, and recurrence to pre-fill your events instantly.
+          </p>
+          <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center shrink-0">
+              <MindIcon className="w-6 h-6 text-primary-600" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900">Natural Language Parsing</h4>
+              <p class="text-gray-500">Type "every 2nd Tuesday" and watch it map across the whole year in seconds.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 bg-gray-100 rounded-[2.5rem] p-8 aspect-square flex items-center justify-center overflow-hidden">
+           <div class="grid grid-cols-7 gap-2 w-full max-w-sm">
+             {#each Array(49) as _, i}
+               <div class="aspect-square rounded-sm {i % 7 === 0 ? 'bg-primary-400' : i % 13 === 0 ? 'bg-primary-200' : 'bg-white'} shadow-sm"></div>
+             {/each}
+           </div>
+        </div>
       </div>
     </section>
 
-    <!-- Features Text -->
-    <section class="max-w-4xl mx-auto px-6 pb-32 space-y-24 text-center">
-      <div class="space-y-6">
-        <h3 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          Joi Planner is an all-in-one app that brings together your calendar, to-do list, and habit tracker into a single timeline
-        </h3>
-      </div>
+    <!-- Privacy Section -->
+    <section class="max-w-4xl mx-auto px-6 py-32 text-center space-y-12">
+      <div class="inline-block px-4 py-1.5 bg-gray-100 rounded-full text-sm font-bold uppercase tracking-wider">Local-First Privacy</div>
+      <h3 class="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1]">
+        No setup. No account. <br/>No stress.
+      </h3>
+      <p class="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        YearGrid works instantly in your browser. Your data stays in LocalStorage, meaning we never see your schedule. Share specific calendars with lightweight links when you're ready.
+      </p>
+    </section>
 
-      <div class="space-y-6">
-        <h3 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          Seamlessly integrated with the Apple ecosystem, Joi syncs effortlessly with your calendars and reminders.
-        </h3>
+    <!-- Testimonial -->
+    <section class="w-full py-24 px-6 bg-gray-50">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-white p-8 md:p-16 rounded-[3rem] shadow-sm border border-gray-100">
+        <img 
+          src="/generated/image-portrait-of-a-focused-professional-woman-1768862722919-2.webp" 
+          alt="Professional User" 
+          class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary-50"
+        />
+        <div class="space-y-6">
+          <p class="text-2xl md:text-3xl font-medium italic leading-snug">
+            "I used to feel behind every single Monday. YearGrid shifted my perspective. I don't just see my day; I see my intentions for the entire year."
+          </p>
+          <div>
+            <div class="font-bold text-lg">Sarah Jenkins</div>
+            <div class="text-gray-400">Creative Director & Long-range Planner</div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="space-y-10">
-        <h3 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          Designed with simplicity in mind, the app aims to create an easy to use experience, allowing you to focus a busy mind on what truly matters — your day ahead.
-        </h3>
-        
+    <!-- CTA -->
+    <section class="w-full py-32 px-6 text-center">
+      <div class="max-w-3xl mx-auto space-y-10">
+        <h2 class="text-4xl md:text-7xl font-bold tracking-tighter">Ready for yearly clarity?</h2>
+        <p class="text-xl text-gray-500">If your current calendar makes you feel behind, try one that helps you see ahead.</p>
         <div class="pt-4">
-          <Button>
-            <Apple className="w-5 h-5" />
-            <span class="text-base">Download for iOS</span>
+          <Button className="px-10 py-5 text-xl">
+            <span class="text-lg">Start your grid now</span>
           </Button>
+          <p class="mt-4 text-sm text-gray-400 font-medium">Free to use. No credit card required.</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="w-full py-12 flex flex-col items-center gap-6 text-center border-t border-gray-100 mt-auto">
-      <div class="font-bold text-xl tracking-tight text-gray-200">Joi</div>
-      <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-400 font-medium">
-        <a href="#" class="hover:text-black transition-colors">App Store</a>
-        <span>•</span>
-        <a href="#" class="hover:text-black transition-colors">Contact</a>
-        <span>•</span>
-        <a href="#" class="hover:text-black transition-colors">X (FKA Twitter)</a>
-        <span>•</span>
-        <a href="#" class="hover:text-black transition-colors">Privacy policy</a>
+    <footer class="w-full py-16 flex flex-col items-center gap-8 text-center border-t border-gray-100 mt-auto">
+      <div class="font-bold text-2xl tracking-tight flex items-center gap-2">
+        <div class="w-6 h-6 bg-black rounded flex items-center justify-center">
+          <div class="w-3 h-3 bg-primary-400 rounded-sm"></div>
+        </div>
+        YearGrid
       </div>
-      <div class="text-[10px] text-gray-300">
-        Crafted in Amsterdam and Lisbon
+      <div class="flex flex-wrap justify-center gap-8 text-sm text-gray-500 font-semibold">
+        <a href="#" class="hover:text-primary-600 transition-colors">Web App</a>
+        <a href="#" class="hover:text-primary-600 transition-colors">Privacy</a>
+        <a href="#" class="hover:text-primary-600 transition-colors">Terms</a>
+        <a href="#" class="hover:text-primary-600 transition-colors">Contact</a>
+      </div>
+      <div class="text-xs text-gray-300 font-medium tracking-widest uppercase">
+        Built for the long-range planner
       </div>
     </footer>
   </main>
