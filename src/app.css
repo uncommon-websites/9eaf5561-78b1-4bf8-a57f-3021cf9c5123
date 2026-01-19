@@ -1,32 +1,50 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap');
 
 @theme {
-	/* Colors */
-	--color-primary-50: oklch(0.979 0.021 166.113);
-	--color-primary-100: oklch(0.95 0.052 163.051);
-	--color-primary-200: oklch(0.905 0.093 164.15);
-	--color-primary-300: oklch(0.845 0.143 164.978);
-	--color-primary-400: oklch(0.765 0.177 163.223);
-	--color-primary-500: oklch(0.696 0.17 162.48);
-	--color-primary-600: oklch(0.596 0.145 163.225);
-	--color-primary-700: oklch(0.508 0.118 165.612);
-	--color-primary-800: oklch(0.432 0.095 166.913);
-	--color-primary-900: oklch(0.378 0.077 168.94);
-	--color-primary-950: oklch(0.262 0.051 172.552);
+	/* YearView Brand Colors */
+	/* Cloud Milk - Primary Background */
+	--color-cloud: #F7F8F6;
+	
+	/* Water Veil - Secondary Background */
+	--color-water: #EEF2F3;
+	
+	/* Atmospheric Tones */
+	--color-mist: #E6EEF1;
+	--color-horizon: #F0E6E1;
+	--color-silver: #E3E6EA;
+	
+	/* Text Colors */
+	--color-slate: #2C3136;
+	--color-drift: #70787F;
+	--color-subtle: #A5ADB4;
 
-	--color-gray-50: oklch(0.985 0 0);
-	--color-gray-100: oklch(0.97 0 0);
-	--color-gray-200: oklch(0.922 0 0);
-	--color-gray-300: oklch(0.87 0 0);
-	--color-gray-400: oklch(0.708 0 0);
-	--color-gray-500: oklch(0.556 0 0);
-	--color-gray-600: oklch(0.439 0 0);
-	--color-gray-700: oklch(0.371 0 0);
-	--color-gray-800: oklch(0.269 0 0);
-	--color-gray-900: oklch(0.205 0 0);
-	--color-gray-950: oklch(0.145 0 0);
+	/* Tailwind-compatible palette mapping */
+	--color-primary-50: #F7F8F6;
+	--color-primary-100: #EEF2F3;
+	--color-primary-200: #E6EEF1;
+	--color-primary-300: #E3E6EA;
+	--color-primary-400: #A5ADB4;
+	--color-primary-500: #70787F;
+	--color-primary-600: #2C3136;
+	--color-primary-700: #2C3136;
+	--color-primary-800: #2C3136;
+	--color-primary-900: #2C3136;
+	--color-primary-950: #2C3136;
 
-	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--color-gray-50: #F7F8F6;
+	--color-gray-100: #EEF2F3;
+	--color-gray-200: #E6EEF1;
+	--color-gray-300: #E3E6EA;
+	--color-gray-400: #A5ADB4;
+	--color-gray-500: #70787F;
+	--color-gray-600: #2C3136;
+	--color-gray-700: #2C3136;
+	--color-gray-800: #2C3136;
+	--color-gray-900: #2C3136;
+	--color-gray-950: #2C3136;
+
+	--font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @layer base {

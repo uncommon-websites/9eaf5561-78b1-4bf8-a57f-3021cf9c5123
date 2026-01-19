@@ -6,7 +6,7 @@
   import MindIcon from '$lib/components/icons/MindIcon.svelte';
 </script>
 
-<div class="min-h-screen bg-white text-black font-sans selection:bg-primary-100">
+<div class="min-h-screen bg-[#F7F8F6] text-[#2C3136] font-sans selection:bg-[#E6EEF1]">
   <Header />
 
   <main class="flex flex-col items-center w-full">
@@ -46,8 +46,8 @@
     <section class="w-full bg-gray-950 text-white py-32 px-6">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
         <div class="space-y-8">
-          <h2 class="text-4xl md:text-6xl font-bold tracking-tight">The heatmap-style year grid</h2>
-          <p class="text-xl text-gray-400 leading-relaxed">
+          <h2 class="text-4xl md:text-6xl font-light tracking-tight">The heatmap-style year grid</h2>
+          <p class="text-xl text-[#A5ADB4] leading-relaxed">
             Traditional calendars trap you in busywork. Ours sets you free. Every day is contextual, categorized, and color-coded—from now until next December.
           </p>
           <ul class="space-y-4 text-lg">
@@ -94,10 +94,10 @@
             </div>
           </div>
         </div>
-        <div class="flex-1 bg-gray-100 rounded-[2.5rem] p-8 aspect-square flex items-center justify-center overflow-hidden">
+        <div class="flex-1 bg-[#E6EEF1]/40 rounded-[2.5rem] p-8 aspect-square flex items-center justify-center overflow-hidden">
            <div class="grid grid-cols-7 gap-2 w-full max-w-sm">
              {#each Array(49) as _, i}
-               <div class="aspect-square rounded-sm {i % 7 === 0 ? 'bg-primary-400' : i % 13 === 0 ? 'bg-primary-200' : 'bg-white'} shadow-sm"></div>
+               <div class="aspect-square rounded-sm {i % 7 === 0 ? 'bg-[#70787F]' : i % 13 === 0 ? 'bg-[#E6EEF1]' : 'bg-[#F7F8F6]'}"></div>
              {/each}
            </div>
         </div>
@@ -124,7 +124,7 @@
           <Button className="px-10 py-5 text-xl">
             <span class="text-lg">Start your grid now</span>
           </Button>
-          <p class="mt-4 text-sm text-gray-400 font-medium">Free to use. No credit card required.</p>
+          <p class="mt-4 text-sm text-[#A5ADB4] font-light">Free to use. No credit card required.</p>
         </div>
       </div>
     </section>
@@ -149,5 +149,44 @@
     </footer>
   </main>
 </div>
+
+
+
+
+
+v>
+
+
+
+
+
+.23753 16.7748 8.62303Z" fill="currentColor"/>
+          <path d="M15.6307 8.5099C15.8829 9.98453 14.6549 11.2232 13.1588 11.2232H7.89462C7.99881 6.52003 9.74782 2.77795 11.8901 2.77795C13.599 2.77795 15.0576 5.15916 15.6307 8.5099Z" fill="currentColor"/>
+          <path d="M6.78316 11.2232C6.83365 8.81927 7.29225 6.60525 8.04807 4.9257C8.31614 4.32993 8.64941 3.74646 9.04901 3.24164C5.66642 4.38174 3.19455 7.50155 3.01129 11.2232H6.78316Z" fill="currentColor"/>
+          <path d="M3.02502 12.3344C3.29367 15.9576 5.73401 18.9764 9.04903 20.0937C8.64944 19.5889 8.31616 19.0054 8.0481 18.4096C7.31563 16.7819 6.86229 14.6523 6.78903 12.3344H3.02502Z" fill="currentColor"/>
+        </svg>
+        YearView
+      </div>
+      <div class="flex flex-wrap justify-center gap-8 text-sm text-[#70787F] font-light">
+        <a href="#" class="hover:text-[#2C3136] transition-colors">Web app</a>
+        <a href="#" class="hover:text-[#2C3136] transition-colors">Privacy</a>
+        <a href="#" class="hover:text-[#2C3136] transition-colors">Terms</a>
+        <a href="#" class="hover:text-[#2C3136] transition-colors">Contact</a>
+      </div>
+      <div class="text-xs text-[#A5ADB4] font-light tracking-widest uppercase">
+        Built for the long-range planner
+      </div>
+    </footer>
+  </main>
+</div>
+
+
+
+
+
+v>
+
+
+
 
 

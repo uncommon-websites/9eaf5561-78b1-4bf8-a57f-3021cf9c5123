@@ -7,9 +7,9 @@
 
 <button 
   class="
-    inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all active:scale-95
-    {variant === 'primary' ? 'bg-primary-500 text-white hover:bg-primary-600 shadow-lg shadow-primary-500/20' : ''}
-    {variant === 'black' ? 'bg-black text-white hover:bg-gray-800' : ''}
+    inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-all active:scale-95
+    {variant === 'primary' ? 'bg-[#2C3136] text-[#F7F8F6] hover:bg-[#70787F]' : ''}
+    {variant === 'black' ? 'bg-[#2C3136] text-[#F7F8F6] hover:bg-[#70787F]' : ''}
     {className}
   "
 >
