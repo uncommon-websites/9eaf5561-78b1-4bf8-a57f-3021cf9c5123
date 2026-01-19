@@ -35,19 +35,10 @@
         Plan your year without drowning in day-to-day noise. See your entire life on one AI-assisted grid.
       </p>
 
-      <div class="mb-20">
+      <div>
         <Button className="px-8 py-4 text-lg">
           <span class="text-base">Start planning — no signup required</span>
         </Button>
-      </div>
-
-      <!-- Hero Image -->
-      <div class="w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-24">
-        <img 
-          src="/generated/image-a-minimalist-high-end-desk-setup-with-a--1768862714564-0.webp" 
-          alt="YearGrid Desktop Interface" 
-          class="w-full h-auto object-cover"
-        />
       </div>
     </section>
 
