@@ -124,26 +124,6 @@
       </p>
     </section>
 
-    <!-- Testimonial -->
-    <section class="w-full py-24 px-6 bg-gray-50">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-white p-8 md:p-16 rounded-[3rem] shadow-sm border border-gray-100">
-        <img 
-          src="/generated/image-portrait-of-a-focused-professional-woman-1768862722919-2.webp" 
-          alt="Professional User" 
-          class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary-50"
-        />
-        <div class="space-y-6">
-          <p class="text-2xl md:text-3xl font-medium italic leading-snug">
-            "I used to feel behind every single Monday. YearGrid shifted my perspective. I don't just see my day; I see my intentions for the entire year."
-          </p>
-          <div>
-            <div class="font-bold text-lg">Sarah Jenkins</div>
-            <div class="text-gray-400">Creative Director & Long-range Planner</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA -->
     <section class="w-full py-32 px-6 text-center">
       <div class="max-w-3xl mx-auto space-y-10">
